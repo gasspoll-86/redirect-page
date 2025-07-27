@@ -13,7 +13,7 @@
       window.onload = function () {
         const randomLink = links[Math.floor(Math.random() * links.length)];
         setTimeout(() => {
-          window.location.href = randomLink;
+          window.open(randomLink, "_blank", "noopener,noreferrer");
         }, 2000);
       };
     </script>
@@ -27,6 +27,6 @@
     </style>
   </head>
   <body>
-    <p>Mohon tunggu, sedang mengalihkan Anda ke halaman tujuan...</p>
+    <p>Mohon tunggu, sedang mengalihkan Anda ke halaman tujuan di tab baru...</p>
   </body>
 </html>
